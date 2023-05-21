@@ -7,10 +7,15 @@ Global Mart is an online supergiant store that operates worldwide, catering to c
 To access the necessary data for sales forecasting, download the Global Superstore Dataset. The dataset includes the following attributes:
 
 Order-Date: The date on which the order was placed.
+
 Segment: The segment to which the product belongs.
+
 Market: The market to which the customer belongs.
+
 Sales: Total sales value of the transaction.
+
 Profit: Profit made on the transaction.
+
 The dataset provides information on 21 unique market segments, categorized by geographical market regions and customer segments.
 
 ### Finding the Most Profitable Market Segment
