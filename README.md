@@ -1,6 +1,5 @@
 # Global-Mart-Time-Series-Forecasting
 
-
 Global Mart is an online supergiant store that operates worldwide, catering to consumer, corporate, and home office segments. As a sales manager for Global Mart, your task is to forecast the sales of products for the next 6 months. This forecast will enable you to plan inventory and business processes effectively.
 
 ### Dataset
@@ -36,7 +35,19 @@ Perform a train-test split: Split the data into a training set and a test set. U
 
 Calculate the CoV: Calculate the CoV on the profit for each of the 21 market segments using the training data.
 
-Compare the CoV values: Compare the CoV values to determine the most profitable market segment.
+Identify the most profitable market segment: Compare the CoV values to determine the market segment with the least variation in profits, indicating the most consistently profitable segment.
 
-Sales Forecasting for the Most Profitable Market Segment
-Once you have identified the most profitable market segment, the next step is to forecast the sales specifically for that segment. This will allow you to focus on a reliable market region for accurate sales predictions.
+### Model Building and Evaluation
+Once you have identified the most profitable market segment, you will proceed with model building and evaluation using both smoothing techniques and ARIMA methods.
+
+Smoothing Techniques
+
+Simple Exponential Smoothing: Apply simple exponential smoothing to the sales data of the most profitable market segment. Evaluate the forecast plot and calculate the Mean Absolute Percentage Error (MAPE).
+
+Holt's Exponential Smoothing: Implement Holt's exponential smoothing on the sales data. Assess the forecast plot and calculate the MAPE.
+
+Holt-Winters' Exponential Smoothing (Additive): Use Holt-Winters' additive exponential smoothing on the sales data. Examine the forecast plot and calculate the MAPE.
+
+Holt-Winters' Exponential Smoothing (Multiplicative): Apply Holt-Winters' multiplicative exponential smoothing to the sales data. Evaluate the forecast plot and calculate the MAPE.
+
+Compare the forecast plots and MAPE values obtained from the above methods. Identify the smoothing technique that yields the closest sales predictions to the actual values with the lowest MAPE.
